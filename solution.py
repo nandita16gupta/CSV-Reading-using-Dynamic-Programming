@@ -59,6 +59,7 @@ def solve(cell, spreadsheet):
     return value
 
 if __name__ == "__main__":
+    
     rows = []
 
     with open('input.csv') as csvfile:
@@ -75,7 +76,7 @@ if __name__ == "__main__":
 
         output_rows.append(output_row)
 
-    with open('solution.csv', 'w') as f:
+    with open('solution_csv_write.csv', 'w') as f:
         writer = csv.writer(f)
         for row in output_rows:
             writer.writerow(row)
